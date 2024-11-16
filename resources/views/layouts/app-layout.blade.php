@@ -9,6 +9,7 @@
 
 <body class="h-full antialiased bg-slate-50">
 
+    <livewire:admin-navigation />
 
     <main>
         {{ $slot }}
