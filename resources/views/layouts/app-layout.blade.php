@@ -11,7 +11,15 @@
 
     <livewire:admin-navigation />
 
-    <main>
+    @if (isset($header))
+        <div class="w-full bg-white rounded shadow">
+            <div class="flex items-center px-3 py-3 mx-auto text-lg font-semibold md:px-8 lg:max-w-7xl ">
+                {{ $header }}
+            </div>
+        </div>
+    @endif
+
+    <main class="px-3 py-5 mx-auto md:px-8 lg:max-w-7xl">
         {{ $slot }}
     </main>
 

@@ -1,5 +1,4 @@
-<!doctype html>
-<html>
+<html class="h-full">
 
 <head>
     <meta charset="utf-8">
@@ -8,7 +7,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="antialiased bg-slate-50">
+<body class="h-full antialiased bg-slate-50">
 
     @if (isset($guestNav))
         {{ $guestNav }}

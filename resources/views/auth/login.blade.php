@@ -1,6 +1,10 @@
-<x-app-layout>
+<x-guest-layout>
 
-    <div class="flex flex-col justify-center min-h-full px-6 py-12 lg:px-8 ">
+    <x-slot name="guestNav">
+        <livewire:guest-navigation />
+    </x-slot>
+
+    <div class="flex flex-col justify-center px-6 py-24 lg:px-8 ">
 
 
 
@@ -44,4 +48,4 @@
     </div>
 
 
-</x-app-layout>
+</x-guest-layout>

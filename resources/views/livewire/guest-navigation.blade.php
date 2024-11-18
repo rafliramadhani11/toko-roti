@@ -42,7 +42,7 @@
         <x-mobile-link href="{{ route('guest.tentangKami') }}"
             class="{{ Route::is('guest.tentangKami') ? 'bg-slate-200' : '' }}" label="About" />
         <hr class="my-2">
-        <x-mobile-link href="#" label="Login"
+        <x-mobile-link href="{{ route('guest.login') }}" label="Login"
             class="mb-2 transition duration-300 hover:text-white hover:bg-slate-950" />
     </x-mobile-dropdown>
 

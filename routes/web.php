@@ -17,4 +17,7 @@ Route::middleware('guest')->group(function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('app', [AdminController::class, 'app'])->name('admin.app');
+    Route::get('stock/create', [AdminController::class, 'createStock'])->name('admin.stock.create');
+    Route::delete('stock/{bread}/delete', [AdminController::class, 'deleteStock'])->name('admin.stock.delete');
+    Route::patch('stock/{bread}/updated', [AdminController::class, 'stockUpdated'])->name('admin.stock.updated');
 });
