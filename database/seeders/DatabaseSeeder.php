@@ -15,15 +15,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory()->create([
-        //     'name' => 'Admin',
-        //     'email' => 'admin@mail.com',
-        //     'password' => Hash::make(123),
-        // ]);
-        Bread::factory()->create([
-            'id' => fake()->numerify('#####'),
-            'name' => fake()->word(),
-            'quantity' => rand(1, 100)
+        User::factory()->create([
+            'name' => 'Admin',
+            'email' => 'admin@mail.com',
+            'password' => Hash::make(123),
         ]);
     }
 }

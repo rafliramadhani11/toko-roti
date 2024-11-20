@@ -40,7 +40,8 @@
                 </div>
 
                 <div>
-                    <x-button class="w-full transition duration-300 bg-blue-600 hover:bg-blue-700" label="Masuk" />
+                    <x-button class="w-full text-white transition duration-300 bg-blue-600 hover:bg-blue-700"
+                        label="Masuk" />
                 </div>
             </form>
 

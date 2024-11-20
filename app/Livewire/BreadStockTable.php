@@ -6,7 +6,7 @@ use Livewire\Component;
 
 class BreadStockTable extends Component
 {
-    public $breads;
+    public $stocks;
 
     public function render()
     {
